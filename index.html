@@ -5,26 +5,131 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Mi Página Web</title>
     <style>
-
+        /* Establecemos el fondo con el degradado */
         body {
-            height: 100vh; //
-            margin: 0; 
-            background: linear-gradient(to center, #333333, #ffffff); 
+            height: 100vh;
+            margin: 0;
+            background: linear-gradient(to center, #000000, #ffffff); /* Degradado de negro a blanco */
+            color: #ffffff; /* Color del texto */
             font-family: Arial, sans-serif;
         }
 
-      
+        /* Seleccionamos los encabezados h1 y h2 para cambiar su color */
+        h1, h2 {
+            color: #ff6347; /* Cambiamos el color de los encabezados a un tono rojo */
+        }
+
+        /* Estilo para las listas */
+        ul, ol {
+            margin-left: 20px;
+        }
+
+        /* Estilo para las tablas */
+        table {
+            width: 80%;
+            margin: 20px auto;
+            border-collapse: collapse;
+            border: 1px solid #ffffff;
+        }
+
+        table th, table td {
+            padding: 8px;
+            text-align: left;
+            border: 1px solid #ffffff;
+        }
+
+        /* Estilo para los vínculos */
+        a {
+            color: #ff6347; /* Cambiamos el color de los vínculos a rojo */
+            text-decoration: none; /* Eliminamos el subrayado */
+        }
+
+        a:hover {
+            text-decoration: underline; /* Agregamos subrayado cuando el vínculo está sobrevolado */
+        }
+
+        /* Estilo para las imágenes */
+        img {
+            width: 100%;
+            height: auto;
+            max-width: 400px; /* Aseguramos que las imágenes no sean demasiado grandes */
+            margin: 10px;
+        }
+
+        /* Contenedor principal */
         .content {
             text-align: center;
-            padding-top: 50px;
+            padding-top: 20px;
+        }
+
+        /* Estilo para los párrafos */
+        p {
+            font-size: 18px;
         }
     </style>
 </head>
 <body>
     <div class="content">
+        <!-- Primer encabezado y párrafo -->
         <h1>Bienvenido a mi página web</h1>
-        <p>Este es un ejemplo de fondo con un degradado de gris oscuro a blanco.</p>
+        <p>Este es un ejemplo de página con un fondo degradado de negro a blanco. Aquí mostramos algunos elementos básicos en HTML y CSS.</p>
+
+        <!-- Segundo encabezado y párrafo -->
+        <h2>Elementos en la página</h2>
+        <p>En esta página encontrarás diferentes tipos de elementos, como listas, imágenes, vínculos, y una tabla.</p>
+
+        <!-- Primera lista no ordenada -->
+        <h3>Lista de características:</h3>
+        <ul>
+            <li>Fondo degradado de negro a blanco</li>
+            <li>Encabezados y párrafos estilizados</li>
+            <li>Imágenes de ejemplo</li>
+        </ul>
+
+        <!-- Segunda lista ordenada -->
+        <h3>Pasos para crear la página:</h3>
+        <ol>
+            <li>Crear un archivo HTML</li>
+            <li>Aplicar estilos con CSS</li>
+            <li>Agregar contenido como imágenes y tablas</li>
+        </ol>
+
+        <!-- Imágenes -->
+        <h3>Algunas imágenes de ejemplo:</h3>
+        <img src="https://via.placeholder.com/400x200.png?text=Imagen+1" alt="Imagen 1">
+        <img src="https://via.placeholder.com/400x200.png?text=Imagen+2" alt="Imagen 2">
+        <img src="https://via.placeholder.com/400x200.png?text=Imagen+3" alt="Imagen 3">
+
+        <!-- Tabla de ejemplo -->
+        <h3>Información en una tabla</h3>
+        <table>
+            <tr>
+                <th>Nombre</th>
+                <th>Edad</th>
+                <th>Ciudad</th>
+            </tr>
+            <tr>
+                <td>Juan</td>
+                <td>25</td>
+                <td>Madrid</td>
+            </tr>
+            <tr>
+                <td>Maria</td>
+                <td>30</td>
+                <td>Barcelona</td>
+            </tr>
+            <tr>
+                <td>Carlos</td>
+                <td>35</td>
+                <td>Valencia</td>
+            </tr>
+        </table>
+
+        <!-- Vínculos internos -->
+        <h3>Vínculos internos:</h3>
+        <p><a href="#bienvenida">Ir al inicio</a></p>
+        <p><a href="#imagenes">Ver imágenes</a></p>
+        <p><a href="#tabla">Ver tabla</a></p>
     </div>
 </body>
 </html>
-
