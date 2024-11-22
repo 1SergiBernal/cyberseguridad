@@ -38,6 +38,10 @@
             font-size: 18px;
         }
 
+        header nav a:hover {
+            color: #3498db;
+        }
+
         .hero {
             background: linear-gradient(145deg, #0a0a0a, #111111, #0a0a0a);
             color: white;
@@ -52,7 +56,16 @@
         .hero h2 {
             font-size: 48px;
             color: #3498db;
-            margin: 0;
+            animation: pulse 2s infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% {
+                transform: scale(1);
+            }
+            50% {
+                transform: scale(1.1);
+            }
         }
 
         .main-content {
@@ -158,19 +171,19 @@
     <header>
         <h1>Ciberseguridad</h1>
         <nav>
-            <a href="#">Inicio</a>
-            <a href="#">Datos</a>
-            <a href="#">Protección</a>
-            <a href="#">Amenazas</a>
+            <a href="#hero">Inicio</a>
+            <a href="#stats">Datos</a>
+            <a href="#protection">Protección</a>
+            <a href="#threat-analysis">Amenazas</a>
         </nav>
     </header>
 
-    <section class="hero">
+    <section class="hero" id="hero">
         <h2>Protege tus datos</h2>
     </section>
 
     <div class="main-content">
-        <section class="stats">
+        <section class="stats" id="stats">
             <h2 class="section-title">Datos sobre la seguridad informática</h2>
             <div class="stats-grid">
                 <div class="stat">
@@ -188,7 +201,7 @@
             </div>
         </section>
 
-        <section class="protection">
+        <section class="protection" id="protection">
             <h2 class="section-title">Sistemas de Protección</h2>
             <div class="protection-grid">
                 <div class="protection-item">
@@ -206,7 +219,7 @@
             </div>
         </section>
 
-        <section class="threat-analysis">
+        <section class="threat-analysis" id="threat-analysis">
             <h2 class="section-title">Análisis de Amenazas</h2>
             <table class="analysis-table">
                 <thead>
@@ -219,22 +232,22 @@
                 </thead>
                 <tbody>
                     <tr>
-                        <td>Ransomware</td>
+                        <td>Spyware</td>
+                        <td>Medio</td>
+                        <td>Moderado</td>
+                        <td>Software antispyware, actualizaciones regulares</td>
+                    </tr>
+                    <tr>
+                        <td>Rootkits</td>
                         <td>Alto</td>
                         <td>Crítico</td>
-                        <td>Backups regulares, formación de usuarios</td>
+                        <td>Detección de integridad, escaneos periódicos</td>
                     </tr>
                     <tr>
-                        <td>Phishing</td>
-                        <td>Alto</td>
-                        <td>Moderado</td>
-                        <td>Filtros de correo, educación</td>
-                    </tr>
-                    <tr>
-                        <td>DDoS</td>
-                        <td>Medio</td>
-                        <td>Alto</td>
-                        <td>WAF, servicios anti-DDoS</td>
+                        <td>Adware</td>
+                        <td>Bajo</td>
+                        <td>Leve</td>
+                        <td>Bloqueadores de anuncios, educación al usuario</td>
                     </tr>
                 </tbody>
             </table>
