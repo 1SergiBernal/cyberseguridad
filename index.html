@@ -3,133 +3,114 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Mi Página Web</title>
-    <style>
-        /* Establecemos el fondo con el degradado */
-        body {
-            height: 100vh;
-            margin: 0;
-            background: linear-gradient(to center, #000000, #ffffff); /* Degradado de negro a blanco */
-            color: #ffffff; /* Color del texto */
-            font-family: Arial, sans-serif;
-        }
-
-        /* Seleccionamos los encabezados h1 y h2 para cambiar su color */
-        h1, h2 {
-            color: #ff6347; /* Cambiamos el color de los encabezados a un tono rojo */
-        }
-
-        /* Estilo para las listas */
-        ul, ol {
-            margin-left: 20px;
-        }
-
-        /* Estilo para las tablas */
-        table {
-            width: 80%;
-            margin: 20px auto;
-            border-collapse: collapse;
-            border: 1px solid #ffffff;
-        }
-
-        table th, table td {
-            padding: 8px;
-            text-align: left;
-            border: 1px solid #ffffff;
-        }
-
-        /* Estilo para los vínculos */
-        a {
-            color: #ff6347; /* Cambiamos el color de los vínculos a rojo */
-            text-decoration: none; /* Eliminamos el subrayado */
-        }
-
-        a:hover {
-            text-decoration: underline; /* Agregamos subrayado cuando el vínculo está sobrevolado */
-        }
-
-        /* Estilo para las imágenes */
-        img {
-            width: 100%;
-            height: auto;
-            max-width: 400px; /* Aseguramos que las imágenes no sean demasiado grandes */
-            margin: 10px;
-        }
-
-        /* Contenedor principal */
-        .content {
-            text-align: center;
-            padding-top: 20px;
-        }
-
-        /* Estilo para los párrafos */
-        p {
-            font-size: 18px;
-        }
-    </style>
+    <title>CyberBlog</title>
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/css/bootstrap.min.css" rel="stylesheet">
+    <link rel="stylesheet" href="styles.css">
 </head>
-<body>
-    <div class="content">
-        <!-- Primer encabezado y párrafo -->
-        <h1>Bienvenido a mi página web</h1>
-        <p>Este es un ejemplo de página con un fondo degradado de negro a blanco. Aquí mostramos algunos elementos básicos en HTML y CSS.</p>
-
-        <!-- Segundo encabezado y párrafo -->
-        <h2>Elementos en la página</h2>
-        <p>En esta página encontrarás diferentes tipos de elementos, como listas, imágenes, vínculos, y una tabla.</p>
-
-        <!-- Primera lista no ordenada -->
-        <h3>Lista de características:</h3>
-        <ul>
-            <li>Fondo degradado de negro a blanco</li>
-            <li>Encabezados y párrafos estilizados</li>
-            <li>Imágenes de ejemplo</li>
+<body class="bg-dark text-light">
+    <nav class="navbar navbar-dark bg-dark px-3">
+        <a class="navbar-brand" href="#">CyberBlog <span class="badge bg-primary">🔒</span></a>
+        <ul class="nav">
+            <li class="nav-item"><a href="#inicio" class="nav-link text-light">Inicio</a></li>
+            <li class="nav-item"><a href="#amenazas" class="nav-link text-light">Amenazas</a></li>
+            <li class="nav-item"><a href="#proteccion" class="nav-link text-light">Protección</a></li>
+            <li class="nav-item"><a href="#recursos" class="nav-link text-light">Recursos</a></li>
         </ul>
+    </nav>
 
-        <!-- Segunda lista ordenada -->
-        <h3>Pasos para crear la página:</h3>
-        <ol>
-            <li>Crear un archivo HTML</li>
-            <li>Aplicar estilos con CSS</li>
-            <li>Agregar contenido como imágenes y tablas</li>
-        </ol>
+    <!-- Sección Principal -->
+    <header id="inicio" class="text-center py-5 bg-primary text-light">
+        <h1>Protege</h1>
+        <p>Descubre las mejores prácticas en ciberseguridad y aprende a protegerte contra las amenazas de hoy en día.</p>
+    </header>
 
-        <!-- Imágenes -->
-        <h3>Algunas imágenes de ejemplo:</h3>
-        <img src="https://via.placeholder.com/400x200.png?text=Imagen+1" alt="Imagen 1">
-        <img src="https://via.placeholder.com/400x200.png?text=Imagen+2" alt="Imagen 2">
-        <img src="https://via.placeholder.com/400x200.png?text=Imagen+3" alt="Imagen 3">
+    <!-- Sección de Estadísticas -->
+    <section class="container py-5">
+        <div class="row text-center">
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/200x150" alt="Amenaza 1" class="img-fluid mb-3">
+                <h3>60%</h3>
+                <p>de las empresas sufren ciberataques</p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/200x150" alt="Amenaza 2" class="img-fluid mb-3">
+                <h3>$6M</h3>
+                <p>costo promedio por ataque</p>
+            </div>
+            <div class="col-md-4">
+                <img src="https://via.placeholder.com/200x150" alt="Amenaza 3" class="img-fluid mb-3">
+                <h3>24/7</h3>
+                <p>monitoreo necesario</p>
+            </div>
+        </div>
+    </section>
 
-        <!-- Tabla de ejemplo -->
-        <h3>Información en una tabla</h3>
-        <table>
-            <tr>
-                <th>Nombre</th>
-                <th>Edad</th>
-                <th>Ciudad</th>
-            </tr>
-            <tr>
-                <td>Juan</td>
-                <td>25</td>
-                <td>Madrid</td>
-            </tr>
-            <tr>
-                <td>Maria</td>
-                <td>30</td>
-                <td>Barcelona</td>
-            </tr>
-            <tr>
-                <td>Carlos</td>
-                <td>35</td>
-                <td>Valencia</td>
-            </tr>
-        </table>
+    <!-- Sección de Sistemas de Protección -->
+    <section id="proteccion" class="bg-dark py-5">
+        <div class="container">
+            <h2 class="text-center mb-5">Sistemas de Protección</h2>
+            <div class="row text-center">
+                <div class="col-md-3">
+                    <img src="https://via.placeholder.com/100" alt="Sistema 1" class="img-fluid mb-2">
+                    <p>Firewall</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="https://via.placeholder.com/100" alt="Sistema 2" class="img-fluid mb-2">
+                    <p>Sistema IDS/IPS</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="https://via.placeholder.com/100" alt="Sistema 3" class="img-fluid mb-2">
+                    <p>Cifrado End-to-End</p>
+                </div>
+                <div class="col-md-3">
+                    <img src="https://via.placeholder.com/100" alt="Sistema 4" class="img-fluid mb-2">
+                    <p>Autenticación MFA</p>
+                </div>
+            </div>
+        </div>
+    </section>
 
-        <!-- Vínculos internos -->
-        <h3>Vínculos internos:</h3>
-        <p><a href="#bienvenida">Ir al inicio</a></p>
-        <p><a href="#imagenes">Ver imágenes</a></p>
-        <p><a href="#tabla">Ver tabla</a></p>
-    </div>
+    <!-- Tabla de Análisis de Amenazas -->
+    <section id="amenazas" class="py-5">
+        <div class="container">
+            <h2 class="text-center mb-4">Análisis de Amenazas</h2>
+            <table class="table table-dark table-hover">
+                <thead>
+                    <tr>
+                        <th>Tipo de Amenaza</th>
+                        <th>Nivel de Riesgo</th>
+                        <th>Impacto</th>
+                        <th>Medidas Recomendadas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ransomware</td>
+                        <td>Alto</td>
+                        <td>Crítico</td>
+                        <td>Backups regulares, formación de usuarios</td>
+                    </tr>
+                    <tr>
+                        <td>Phishing</td>
+                        <td>Moderado</td>
+                        <td>Alto</td>
+                        <td>Filtros de correo, educación</td>
+                    </tr>
+                    <tr>
+                        <td>DDoS</td>
+                        <td>Medio</td>
+                        <td>Moderado</td>
+                        <td>WAF, servicios anti-DDoS</td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </section>
+
+    <footer class="text-center py-3 bg-dark text-light">
+        <p>© 2024 CyberBlog | Protección avanzada</p>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0-alpha1/dist/js/bootstrap.bundle.min.js"></script>
 </body>
 </html>
+
