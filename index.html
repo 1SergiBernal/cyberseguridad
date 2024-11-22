@@ -42,17 +42,120 @@
             background: linear-gradient(145deg, #0a0a0a, #111111, #0a0a0a);
             color: white;
             text-align: center;
-            padding: 100px 20px; /* Incrementé la altura */
-            height: 500px; /* Ajusté la altura */
+            padding: 100px 20px;
+            height: 500px;
             display: flex;
             justify-content: center;
             align-items: center;
         }
 
         .hero h2 {
-            font-size: 48px; /* Hice el texto más grande */
+            font-size: 48px;
             color: #3498db;
             margin: 0;
+        }
+
+        .main-content {
+            padding: 20px;
+        }
+
+        .stats {
+            display: flex;
+            justify-content: space-around;
+            margin: 20px 0;
+            text-align: center;
+        }
+
+        .stat {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            width: 30%;
+        }
+
+        .stat h3 {
+            color: #3498db;
+            font-size: 32px;
+        }
+
+        .stat p {
+            font-size: 18px;
+        }
+
+        .protection {
+            margin-top: 40px;
+        }
+
+        .protection h2 {
+            text-align: center;
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+
+        .protection-grid {
+            display: flex;
+            justify-content: space-around;
+            flex-wrap: wrap;
+        }
+
+        .protection-item {
+            background-color: #1e1e1e;
+            padding: 20px;
+            border-radius: 10px;
+            margin: 10px;
+            text-align: center;
+            flex: 1 1 calc(30% - 20px);
+        }
+
+        .protection-item img {
+            max-width: 100%;
+            height: auto;
+            margin-bottom: 10px;
+        }
+
+        .threat-analysis {
+            margin-top: 40px;
+        }
+
+        .threat-analysis h2 {
+            text-align: center;
+            color: #3498db;
+            margin-bottom: 20px;
+        }
+
+        .analysis-table {
+            width: 100%;
+            border-collapse: collapse;
+            margin: 0 auto;
+            text-align: center;
+            background-color: #1e1e1e;
+            border-radius: 10px;
+            overflow: hidden;
+        }
+
+        .analysis-table th, .analysis-table td {
+            padding: 15px;
+            border: 1px solid #2a2a2a;
+        }
+
+        .analysis-table th {
+            background-color: #2c3e50;
+            color: white;
+        }
+
+        .analysis-table td {
+            color: #ddd;
+        }
+
+        footer {
+            background-color: #000;
+            padding: 10px 20px;
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        footer p {
+            color: white;
         }
     </style>
 </head>
@@ -70,5 +173,78 @@
     <section class="hero">
         <h2>Protege tus datos</h2>
     </section>
+
+    <div class="main-content">
+        <section class="stats">
+            <div class="stat">
+                <h3>60%</h3>
+                <p>de las empresas sufren ciberataques</p>
+            </div>
+            <div class="stat">
+                <h3>$6M</h3>
+                <p>costo promedio por ataque</p>
+            </div>
+            <div class="stat">
+                <h3>24/7</h3>
+                <p>monitoreo necesario</p>
+            </div>
+        </section>
+
+        <section class="protection">
+            <h2>Sistemas de Protección</h2>
+            <div class="protection-grid">
+                <div class="protection-item">
+                    <img src="https://via.placeholder.com/150" alt="Firewall">
+                    <p>Firewalls de última generación</p>
+                </div>
+                <div class="protection-item">
+                    <img src="https://via.placeholder.com/150" alt="Cifrado">
+                    <p>Encriptación de datos</p>
+                </div>
+                <div class="protection-item">
+                    <img src="https://via.placeholder.com/150" alt="Autenticación">
+                    <p>Autenticación multifactor</p>
+                </div>
+            </div>
+        </section>
+
+        <section class="threat-analysis">
+            <h2>Análisis de Amenazas</h2>
+            <table class="analysis-table">
+                <thead>
+                    <tr>
+                        <th>Tipo de Amenaza</th>
+                        <th>Nivel de Riesgo</th>
+                        <th>Impacto</th>
+                        <th>Medidas Recomendadas</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>Ransomware</td>
+                        <td>Alto</td>
+                        <td>Crítico</td>
+                        <td>Backups regulares, formación de usuarios</td>
+                    </tr>
+                    <tr>
+                        <td>Phishing</td>
+                        <td>Alto</td>
+                        <td>Moderado</td>
+                        <td>Filtros de correo, educación</td>
+                    </tr>
+                    <tr>
+                        <td>DDoS</td>
+                        <td>Medio</td>
+                        <td>Alto</td>
+                        <td>WAF, servicios anti-DDoS</td>
+                    </tr>
+                </tbody>
+            </table>
+        </section>
+    </div>
+
+    <footer>
+        <p>© 2024 CyberBlog. Todos los derechos reservados.</p>
+    </footer>
 </body>
 </html>
